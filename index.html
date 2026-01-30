@@ -22,6 +22,8 @@
         rel="stylesheet preload" as="style">
     <link rel="preload" as="image" href="assets/images/banner/21.webp" />
     <link rel="stylesheet preload" href="assets/css/style.css" as="style">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -121,7 +123,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <div class="banner-inner-two-content">
+                                    <div class="banner-inner-two-content" data-aos="fade-up" data-aos-delay="200">
                                         <p class="pre-title"><span>Welcome!</span> Start Growing Your Business Today</p>
                                         <h1 class="title">Connecting the best talent <br> with organizations where
                                             potential is realized.</h1>
@@ -218,7 +220,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="left-thumbnail-about-area-two">
+                    <div class="left-thumbnail-about-area-two" data-aos="fade-right" data-aos-duration="1200">
                         <img loading="lazy" src="assets/images/about/04.webp" alt="about">
                         <div class="small-image">
                             <img loading="lazy" src="assets/images/about/05.webp" alt="small">
@@ -231,7 +233,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 mt_sm--80 mt_md--80">
-                    <div class="about-inner-content-two">
+                    <div class="about-inner-content-two" data-aos="fade-left" data-aos-duration="1200"
+                        data-aos-delay="300">
                         <div class="title-style-two left">
                             <span class="bg-content">About Us</span>
                             <span class="pre">More About Us</span>
@@ -286,7 +289,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="title-style-two center">
+                    <div class="title-style-two center" data-aos="fade-up">
                         <span class="bg-content">Services</span>
                         <span class="pre">our Service</span>
                         <h2 class="title rts-text-anime-style-1">High Quality Services
@@ -406,7 +409,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="cta-style-two-area">
+                                <div class="cta-style-two-area" data-aos="zoom-in" data-aos-duration="1200">
                                     <h3 class="title rts-text-anime-style-1">
                                         Let’s discuss about how we can help <br>
                                         make your business better
@@ -429,7 +432,7 @@
         <div class="container pt--30">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="consultancy-style-one">
+                    <div class="consultancy-style-one" data-aos="fade-right">
                         <div class="title-style-two mb--40 left">
                             <span class="bg-content">Business Goal</span>
                             <span class="pre">JUST A CONSULTANCY</span>
@@ -479,7 +482,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="thumbnail-business-area-right-two">
+                    <div class="thumbnail-business-area-right-two" data-aos="fade-left">
                         <div class="large-thumbnail">
                             <img loading="lazy" src="assets/images/business-goal/02.html" alt="">
                         </div>
@@ -572,7 +575,7 @@
 
                         <div class="swiper mySwiper-project-1">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
+                                <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
                                     <div class="project-style-one">
                                         <a href="project-details.html" class="thumbnail">
                                             <img loading="lazy" src="assets/images/project/pharma.jpg" alt="project">
@@ -587,7 +590,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
                                     <div class="project-style-one">
                                         <a href="project-details.html" class="thumbnail">
                                             <img loading="lazy" src="assets/images/project/travel-tech.jpg"
@@ -603,7 +606,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
                                     <div class="project-style-one">
                                         <a href="project-details.html" class="thumbnail">
                                             <img loading="lazy" src="assets/images/project/running.jpg" alt="project">
@@ -618,7 +621,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide" data-aos="fade-up" data-aos-delay="400">
                                     <div class="project-style-one">
                                         <a href="project-details.html" class="thumbnail">
                                             <img loading="lazy" src="assets/images/project/software.jpg" alt="project">
@@ -1430,6 +1433,17 @@
     <script defer src="assets/js/plugins/contact.form.html"></script>
 
     <script defer src="assets/js/main.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 120,
+            });
+        });
+    </script>
 </body>
 
 </html>
